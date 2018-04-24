@@ -60,7 +60,7 @@ public class GUIUtil {
 			Integer.parseInt(text);
 			return true;
 		} catch (NumberFormatException e1) {
-			JOptionPane.showMessageDialog(null, input + " 需要是整数");
+			JOptionPane.showMessageDialog(null, input + " should be integer");
 			tf.grabFocus();
 			return false;
 		}
@@ -72,7 +72,7 @@ public class GUIUtil {
 		String text = tf.getText().trim();
 
 		if (0 == Integer.parseInt(text)) {
-			JOptionPane.showMessageDialog(null, input + " 不能为零");
+			JOptionPane.showMessageDialog(null, input + " cannot be zero");
 			tf.grabFocus();
 			return false;
 		}
@@ -82,7 +82,7 @@ public class GUIUtil {
 	public static boolean checkEmpty(JTextField tf, String input) {
 		String text = tf.getText().trim();
 		if (0 == text.length()) {
-			JOptionPane.showMessageDialog(null, input + " 不能为空");
+			JOptionPane.showMessageDialog(null, input + " cannot be null");
 			tf.grabFocus();
 			return false;
 		}
