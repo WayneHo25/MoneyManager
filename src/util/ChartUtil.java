@@ -20,7 +20,7 @@ public class ChartUtil {
 		String[] sampleLabels = new String[rs.size()];
 		for (int i = 0; i < sampleLabels.length; i++) {
 			if (0 == i % 5)
-				sampleLabels[i] = String.valueOf(i + 1 + "日");
+				sampleLabels[i] = String.valueOf(i + 1 + "day");
 		}
 
 		return sampleLabels;
@@ -37,53 +37,53 @@ public class ChartUtil {
 	}
 
 	public static Image getImage(List<Record> rs, int width, int height) {
-		// 根据消费记录得到的样本数据
+		//Get the data of sample according to the expense record
 		double[] sampleValues = sampleValues(rs);
-		// 根据消费记录得到的下方日期文本
+		//Get the date according to the expense record
 		String[] sampleLabels = sampleLabels(rs);
-		// 样本中的最大值
+		//Get the maximum value from sample
 		int max = max(sampleValues);
 
-		// 数据颜色
+		//The color of data
 		Color[] sampleColors = new Color[] { ColorUtil.blueColor };
 
-		// 柱状图
+		//Bar char
 		BarChart chart = new BarChart();
 
-		// 设置样本个数
+		//Set sample count
 		chart.setSampleCount(sampleValues.length);
-		// 设置样本数据
+		//Set sample value
 		chart.setSampleValues(0, sampleValues);
-		// 设置文字
+		//Set sample label
 		chart.setSampleLabels(sampleLabels);
-		// 设置样本颜色
+		//Set sample color
 		chart.setSampleColors(sampleColors);
-		// 设置取值范围
+		//Set range
 		chart.setRange(0, max * 1.2);
-		// 显示背景横线
+		//Set value line on
 		chart.setValueLinesOn(true);
-		// 显示文字
+		//Set sample label on
 		chart.setSampleLabelsOn(true);
-		// 把文字显示在下方
+		//Set sample label style
 		chart.setSampleLabelStyle(Chart.BELOW);
 
-		// 样本值的字体
+		//Set range label font
 		chart.setFont("rangeLabelFont", new Font("Arial", Font.BOLD, 12));
-		// 显示图例说明
+		//Set legend on
 		chart.setLegendOn(true);
-		// 把图例说明放在左侧
+		//Set legend position
 		chart.setLegendPosition(Chart.LEFT);
-		// 图例说明中的文字
+		//Set legend label
 		chart.setLegendLabels(new String[] { "月消费报表" });
-		// 图例说明的字体
+		//Set legend font
 		chart.setFont("legendFont", new Font("Dialog", Font.BOLD, 13));
-		// 下方文字的字体
+		//set sample label font
 		chart.setFont("sampleLabelFont", new Font("Dialog", Font.BOLD, 13));
-		// 图表中间背景颜色
+		//set chart background
 		chart.setChartBackground(Color.white);
-		// 图表整体背景颜色
+		//set background
 		chart.setBackground(ColorUtil.backgroundColor);
-		// 把图表转换为Image类型
+		//transfer chart to image
 		Image im = chart.getImage(width, height);
 		return im;
 	}
@@ -109,53 +109,53 @@ public class ChartUtil {
 	}
 
 	public static Image getImage(int width, int height) {
-		// 模拟样本数据
+		//sample values
 		double[] sampleValues = sampleValues();
-		// 下方显示的文字
+		//sample labels
 		String[] sampleLabels = sampleLabels();
-		// 样本中的最大值
+		//the maximum value of sample
 		int max = max(sampleValues);
 
-		// 数据颜色
+		//sample color
 		Color[] sampleColors = new Color[] { ColorUtil.blueColor };
 
-		// 柱状图
+		//bar char
 		BarChart chart = new BarChart();
 
-		// 设置样本个数
+		//set sample count
 		chart.setSampleCount(sampleValues.length);
-		// 设置样本数据
+		//set sample values
 		chart.setSampleValues(0, sampleValues);
-		// 设置文字
+		//set sample label
 		chart.setSampleLabels(sampleLabels);
-		// 设置样本颜色
+		//set sample color
 		chart.setSampleColors(sampleColors);
-		// 设置取值范围
+		//set range
 		chart.setRange(0, max * 1.2);
-		// 显示背景横线
+		//set value line on
 		chart.setValueLinesOn(true);
-		// 显示文字
+		//set sample label on
 		chart.setSampleLabelsOn(true);
-		// 把文字显示在下方
+		//set sample label style
 		chart.setSampleLabelStyle(Chart.BELOW);
 
-		// 样本值的字体
+		//set range label font
 		chart.setFont("rangeLabelFont", new Font("Arial", Font.BOLD, 12));
-		// 显示图例说明
+		//set legend on
 		chart.setLegendOn(true);
-		// 把图例说明放在左侧
+		//set legend position
 		chart.setLegendPosition(Chart.LEFT);
-		// 图例说明中的文字
+		//set legend label
 		chart.setLegendLabels(new String[] { "月消费报表" });
-		// 图例说明的字体
+		//set legend font
 		chart.setFont("legendFont", new Font("Dialog", Font.BOLD, 13));
-		// 下方文字的字体
+		//set sample legend font
 		chart.setFont("sampleLabelFont", new Font("Dialog", Font.BOLD, 13));
-		// 图表中间背景颜色
+		//set chart background
 		chart.setChartBackground(Color.white);
-		// 图表整体背景颜色
+		//set background
 		chart.setBackground(ColorUtil.backgroundColor);
-		// 把图表转换为Image类型
+		//transfer chart to image
 		Image im = chart.getImage(width, height);
 		return im;
 	}

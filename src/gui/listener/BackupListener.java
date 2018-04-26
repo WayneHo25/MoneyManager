@@ -46,7 +46,7 @@ public class BackupListener implements ActionListener {
          File file = fc.getSelectedFile();
          System.out.println(file);
          if (returnVal == JFileChooser.APPROVE_OPTION) {
-             //如果保存的文件名没有以.sql结尾，自动加上.sql
+         //if saved file name is not end with '.sql', add '.sql'
         	 System.out.println(file);
         	 if(!file.getName().toLowerCase().endsWith(".sql"))
         		 file = new File(file.getParent(),file.getName()+".sql");
@@ -57,7 +57,7 @@ public class BackupListener implements ActionListener {
 				JOptionPane.showMessageDialog(p, "Backup successfully, backup file is in:\r\n"+file.getAbsolutePath());
 			} catch (Exception e1) {
 				e1.printStackTrace();
-				JOptionPane.showMessageDialog(p, "Failed to backup,\r\nError:\r\n"+e1.getMessage());	
+				JOptionPane.showMessageDialog(p, "Failed to backup, error:\r\n"+e1.getMessage());	
 			}
         	 
          }		

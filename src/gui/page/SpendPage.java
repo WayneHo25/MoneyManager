@@ -30,11 +30,11 @@ public class SpendPage {
 			this.monthAvailable = "￥" + monthAvailable;
 			this.dayAvgAvailable = "￥" + dayAvgAvailable;
 		} else {
-			this.monthAvailable = "超支" + (0 - monthAvailable);
+			this.monthAvailable = "overspend" + (0 - monthAvailable);
 			this.dayAvgAvailable = "￥0";
 		}
 
-		this.monthLeftDay = monthLeftDay + "天";
+		this.monthLeftDay = monthLeftDay + "day";
 		this.usagePercentage = usagePercentage;
 	}
 }

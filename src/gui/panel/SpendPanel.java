@@ -22,10 +22,10 @@ public class SpendPanel extends WorkingPanel {
 
 	JLabel lMonthSpend = new JLabel("Month Expense");
 	JLabel lTodaySpend = new JLabel("Today Expense");
-	JLabel lAvgSpendPerDay = new JLabel("Average Daily Expense");
-	JLabel lMonthLeft = new JLabel("Available Budget");
-	JLabel lDayAvgAvailable = new JLabel("Average Daily Available Budget");
-	JLabel lMonthLeftDay = new JLabel("Remaining day of this month");
+	JLabel lAvgSpendPerDay = new JLabel("Ave. Expense /d");
+	JLabel lMonthLeft = new JLabel("Avl. Budget");
+	JLabel lDayAvgAvailable = new JLabel("Ave. Avl. Budget /d");
+	JLabel lMonthLeftDay = new JLabel("Month remaining day");
 
 	JLabel vMonthSpend = new JLabel("￥2300");
 	JLabel vTodaySpend = new JLabel("￥25");

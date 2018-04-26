@@ -20,7 +20,7 @@ public class RecordListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		RecordPanel p  =RecordPanel.instance;
 		if(0==p.cbModel.cs.size()){
-			JOptionPane.showMessageDialog(p, "There is not any category，unable to add，please add the category first");
+			JOptionPane.showMessageDialog(p, "There is not any category，unable to add，please add a category first");
 			MainPanel.instance.workingPanel.show(CategoryPanel.instance);
 			return;
 		}

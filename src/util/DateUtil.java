@@ -11,7 +11,7 @@ public class DateUtil {
     }
      
     /**
-     * 获取今天，并且把时，分，秒和毫秒都置0. 因为通过日期控件获取到的日期，就是没有时分秒和毫秒的。
+     * Get the value of today. Set hour, minute, second as 0.
      * @return
      */
     public static Date today(){
@@ -25,10 +25,9 @@ public class DateUtil {
     }
  
     /**
-     * 获取月初。使用Calendar获取本月第一天。 在统计消费一览信息的时候，查看本月的消费数据，其实就是从数据库中去把从本月第一天到最后一天的数据查出来，再进行简单统计，所以需要一个获取本月第一天的方法。
+     * Get the start of this month. Using Calendar object to get the start of this month.Using the start and the end of this month to get the data from database.
      * @return
      */
- 
     public static Date monthBegin() {
         Calendar c = Calendar.getInstance();
         c.setTime(new Date());
@@ -43,7 +42,7 @@ public class DateUtil {
     }
      
     /**
-     * 获取月末
+     * Get the end of this month
      * @return
      */
     public static Date monthEnd() {
@@ -60,7 +59,7 @@ public class DateUtil {
     }
  
     /**
-     * 获取本月一共有多少天
+     * Get the number of day in this month
      * @return
      */
     public static int thisMonthTotalDay(){
@@ -72,16 +71,15 @@ public class DateUtil {
     }
      
     /**
-     *获取本月还剩多少天 
+     * Get the number of remaining day in this month
      * @return
      */
-     
     public static int thisMonthLeftDay(){
         long lastDayMilliSeconds = monthEnd().getTime();
         long toDayMilliSeconds = today().getTime();
         return (int) ((lastDayMilliSeconds-toDayMilliSeconds)/millisecondsOfOneDay) +1;
     }   
-     
+    
     public static void main(String[] args) {
         System.out.println(DateUtil.monthEnd());
     

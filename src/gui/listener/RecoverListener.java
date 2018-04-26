@@ -52,7 +52,7 @@ public class RecoverListener implements ActionListener {
 				JOptionPane.showMessageDialog(p, "Revocery successfully");
 			} catch (Exception e1) {
 				e1.printStackTrace();
-				JOptionPane.showMessageDialog(p, "Failed to recovery\r\n,Error:\r\n"+e1.getMessage());	
+				JOptionPane.showMessageDialog(p, "Failed to recovery, error:\r\n"+e1.getMessage());	
 			}
         	 
          }		

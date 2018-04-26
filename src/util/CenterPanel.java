@@ -12,14 +12,14 @@ import gui.panel.WorkingPanel;
 
 public class CenterPanel extends JPanel {
 
-	private double rate;// 拉伸比例
-	private JComponent c; // 显示的组件
-	private boolean strech; // 是否拉伸
+	private double rate;// stretch rate
+	private JComponent c; // showed component
+	private boolean stretch; // whether stretch
 
-	public CenterPanel(double rate, boolean strech) {
+	public CenterPanel(double rate, boolean stretch) {
 		this.setLayout(null);
 		this.rate = rate;
-		this.strech = strech;
+		this.stretch = stretch;
 	}
 
 	public CenterPanel(double rate) {
@@ -31,7 +31,7 @@ public class CenterPanel extends JPanel {
 			Dimension containerSize = this.getSize();
 			Dimension componentSize = c.getPreferredSize();
 
-			if (strech)
+			if (stretch)
 				c.setSize((int) (containerSize.width * rate), (int) (containerSize.height * rate));
 			else
 				c.setSize(componentSize);
