@@ -6,11 +6,17 @@ A Java desktop application about money manager (Powered with HOW2J.CN)
 
 ## Main function:
 1.Overview of expense
+
 2.Record expense
+
 3.Add expense category
+
 4.Show monthly report
+
 5.Setting
+
 6.Backup
+
 7.Recover
 
 ## Main structure:
