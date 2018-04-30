@@ -24,7 +24,7 @@ Using Swing as GUI widget toolkit for Java
 
 Using MySQL as the database engine
 
-There are three tables in the moneymanager database:
+### There are three tables in the moneymanager database:
 
 1.category
 
@@ -38,7 +38,7 @@ id, spend, cid, comment, date
 
 id, key, value
 
-There are seven panels in MoneyManger:
+### There are seven panels in MoneyManger:
 
 1.Overview of expense
 
