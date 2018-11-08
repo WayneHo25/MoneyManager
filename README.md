@@ -11,21 +11,15 @@ A Java desktop application about money manager (Powered with HOW2J.CN)
 - Recover
 
 ## Main structure
-Using Swing as GUI widget toolkit for Java  
-Using MySQL as the database engine
+- Using Swing as GUI widget toolkit for Java
+- Using MySQL as the database engine
 
 #### 1.There are three tables in the moneymanager database:
-
-1.category
-
-attribute: id, name
-
-2.record
-
-attribute: id, spend, cid, comment, date
-
-3.config
-
+1.category  
+attribute: id, name  
+2.record  
+attribute: id, spend, cid, comment, date  
+3.config  
 attribute: id, key, value
 
 #### 2.There are seven panels in MoneyManger:
