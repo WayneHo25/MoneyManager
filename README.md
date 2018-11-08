@@ -1,7 +1,7 @@
 # MoneyManager
 A Java desktop application about money manager (Powered with HOW2J.CN)
 
-## The screenshot of the main interface is showed below:
+## The screenshot of the main interface
 ![Website Index](https://github.com/wayneho25/MoneyManager/raw/master/screenshot.png)
 
 ## Main function:
