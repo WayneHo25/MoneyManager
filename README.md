@@ -1,10 +1,8 @@
 # MoneyManager
 A Java desktop application about money manager (Powered with HOW2J.CN)
 
-## The screenshot of the main interface
-![Website Index](https://github.com/wayneho25/MoneyManager/raw/master/screenshot.png)
-
-## Main function:
+## Description
+### Main function:
 1.Overview of expense
 
 2.Record expense
@@ -19,12 +17,12 @@ A Java desktop application about money manager (Powered with HOW2J.CN)
 
 7.Recover
 
-## Main structure:
+### Main structure:
 Using Swing as GUI widget toolkit for Java
 
 Using MySQL as the database engine
 
-### 1.There are three tables in the moneymanager database:
+#### 1.There are three tables in the moneymanager database:
 
 1.category
 
@@ -38,7 +36,7 @@ attribute: id, spend, cid, comment, date
 
 attribute: id, key, value
 
-### 2.There are seven panels in MoneyManger:
+#### 2.There are seven panels in MoneyManger:
 
 1.Overview of expense
 
@@ -53,3 +51,8 @@ attribute: id, key, value
 6.Backup
 
 7.Recover
+
+## The screenshot of interface
+![Website Index](https://github.com/wayneho25/MoneyManager/raw/master/screenshot.png)
+
+
