@@ -23,22 +23,13 @@ attribute: id, spend, cid, comment, date
 attribute: id, key, value
 
 #### 2.There are seven panels in MoneyManger:
-
-1.Overview of expense
-
-2.Record expense
-
-3.Add expense category
-
-4.Show monthly report
-
-5.Setting
-
-6.Backup
-
-7.Recover
+1.Overview of expense  
+2.Record expense  
+3.Add expense category  
+4.Show monthly report  
+5.Setting  
+6.Backup  
+7.Recover  
 
 ## The screenshot of interface
 ![Website Index](https://github.com/wayneho25/MoneyManager/raw/master/screenshot.png)
-
-
