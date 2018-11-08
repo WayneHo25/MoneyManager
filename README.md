@@ -11,7 +11,7 @@ A Java desktop application about money manager (Powered with HOW2J.CN)
 - Recover
 
 ## Main structure
-Using Swing as GUI widget toolkit for Java
+Using Swing as GUI widget toolkit for Java . 
 Using MySQL as the database engine
 
 #### 1.There are three tables in the moneymanager database:
